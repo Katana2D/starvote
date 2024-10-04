@@ -1,0 +1,175 @@
+/* Estilo geral */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    /* Alterado para garantir que o texto seja visível */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #000000;
+    /* Alterado para garantir que os links sejam visíveis */
+}
+
+/* Estilo do conteúdo */
+.content {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    /* Combina margens superior e inferior */
+}
+
+/* Header */
+.navbar {
+    background-color: #000000;
+    /* Fundo preto */
+    padding: 10px 0;
+    /* Espaçamento no topo e embaixo */
+}
+
+.navbar-brand img {
+    height: 50px;
+    /* Ajuste da altura da logo */
+    width: auto;
+    /* Mantém a proporção */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    /* Texto branco */
+    margin-left: 15px;
+    /* Espaçamento entre links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc;
+    /* Texto ao passar o mouse */
+}
+
+.search-bar {
+    background-color: transparent;
+    /* Torna a barra de pesquisa transparente */
+    border: 1px solid #ffffff;
+    /* Cor da borda */
+    border-radius: 25px;
+    /* Bordas arredondadas */
+    width: 400px;
+    /* Largura desejada */
+    transition: all 0.3s ease;
+    /* Transição suave */
+}
+
+.search-bar:focus {
+    border-color: #ffffff;
+    /* Muda a cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    /* Sombra ao focar */
+}
+
+.search-button {
+    border-radius: 50%;
+    /* Botão arredondado */
+    margin-left: -45px;
+    /* Para sobrepor a barra de pesquisa */
+    background-color: #ffffff;
+    /* Cor de fundo do botão */
+    border: none;
+    /* Remove a borda */
+}
+
+/* Jumpscare */
+.jumpscare {
+    position: absolute;
+    /* Sobrepondo o cabeçalho */
+    top: 0;
+    /* Fica no topo */
+    left: 0;
+    /* Fica à esquerda */
+    width: 100vw;
+    /* Largura total */
+    height: 100vh;
+    /* Altura total */
+    display: none;
+    /* Começa escondido */
+    justify-content: center;
+    /* Centraliza o conteúdo */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fundo escuro com transparência */
+    z-index: 999;
+    /* Garante que esteja acima de outros elementos */
+}
+
+.jumpscare-img {
+    max-width: 80%;
+    /* Limita a largura da imagem */
+    max-height: 80%;
+    /* Limita a altura da imagem */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+    /* 1 segundo de duração */
+}
+
+/* Carousel */
+.carousel {
+    width: 100%;
+    /* Ocupará 100% da largura da tela */
+    max-width: none;
+    /* Remove a largura máxima para que ocupe toda a tela */
+    margin: 0;
+    /* Remove o espaçamento lateral */
+    height: 500px;
+    /* Defina uma altura fixa para o carrossel */
+    overflow: hidden;
+    /* Esconde excesso de imagem, se houver */
+}
+
+/* Ajustar a imagem do carrossel para ocupar 100% da largura */
+.carousel-item img {
+    width: 100%;
+    /* Faz as imagens preencherem a largura do carrossel */
+    height: 100%;
+    /* Faz as imagens preencherem a altura do carrossel */
+    object-fit: cover;
+    /* Cobre a área do carrossel sem distorcer a imagem */
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    /* Fundo preto */
+    color: #ffffff;
+    /* Texto branco */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 15px 0;
+    /* Espaçamento no topo e embaixo */
+    margin-top: auto;
+    /* Empurra o footer para o final da página */
+    width: 100%;
+    /* Largura total */
+}
+
+footer span {
+    font-size: 14px;
+    /* Tamanho da fonte */
+}
